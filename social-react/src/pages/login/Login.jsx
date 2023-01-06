@@ -5,7 +5,7 @@ const Login = () => {
     <div className='login'>
       <div className="card">
         <div className="left">
-          <h1>Welcome to Facemash</h1>
+          <h1>Social World.</h1>
           <p>Next generation social media application.</p>
           <span>Don't you have an account?</span>
           <button>Register</button>
