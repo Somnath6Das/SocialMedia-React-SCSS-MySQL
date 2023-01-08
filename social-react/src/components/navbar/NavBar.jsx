@@ -10,7 +10,7 @@ import NotificationsNoneOutlinedIcon from "@mui/icons-material/NotificationsNone
 
 const NavBar = () => {
   return (
-    <div className="navBar">
+    <div className="navbar">
       <div className="left">
         <Link to="/" style={{ textDecoration: "none" }}>
           <span>Social World</span>
@@ -28,7 +28,7 @@ const NavBar = () => {
         <EmailOutlinedIcon />
         <NotificationsNoneOutlinedIcon />
         <div className="user">
-          <img src="" alt="" />
+          <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png" alt="" />
           <span>Somnath</span>
         </div>
       </div>
