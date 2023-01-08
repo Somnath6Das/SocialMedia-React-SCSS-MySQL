@@ -15,7 +15,7 @@ import {
 
 function App() {
 
-  const currentUser = false;
+  const currentUser = true;
 
   const Layout = () => {
     return (
@@ -41,6 +41,7 @@ function App() {
       path: "/",
       element: <ProtectedRoute><Layout /></ProtectedRoute>,
       children: [
+        // in this children all the Layout components will remain common only home and profile will be include as per link condition. 
         {
           path: "/",
           element: <Home />
