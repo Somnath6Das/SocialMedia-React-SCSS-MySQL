@@ -1,0 +1,61 @@
+.rightBar {
+  flex: 3;
+  position: sticky;
+  top: 70px;
+  height: calc(200vh - 70vh);
+  overflow: scroll;
+  &::-webkit-scrollbar {
+    display: none;
+
+  }
+  .container {
+    .item {
+      span {
+        color: gray;
+      }
+      .user {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 20px 0px;
+        .userInfo {
+          display: flex;
+          align-items: center;
+          gap: 20px;
+          img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            object-fit: cover;
+          }
+          span{
+            font-weight: 500;
+            color: black;
+            font-size: medium;
+          }
+        }
+        .buttons {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+
+          button{
+            border: none;
+            padding: 5px;
+            color: white;
+            cursor: pointer;
+            border-radius: 6px;
+
+            &:first-child {
+                background-color: rgb(10, 165, 10);
+                padding: 5px 10px;
+            }
+            &:last-child {
+                background-color: rgb(212, 59, 59);
+            }
+          }
+        }
+      }
+    }
+  }
+}

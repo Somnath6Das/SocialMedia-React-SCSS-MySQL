@@ -4,6 +4,10 @@
   padding: 10px 20px;
   height: 50px;
   border-bottom: 1px solid lightskyblue;
+  position: sticky;
+  background-color: white;
+  z-index: 2;
+  top: 0;
   .left {
     display: flex;
     align-items: center;
@@ -35,7 +39,7 @@
       display: flex;
       align-items: center;
       gap: 10px;
-      font-weight: 500;
+
       img {
         width: 30px;
         height: 30px;
@@ -43,6 +47,7 @@
         object-fit: cover;
       }
       span {
+        font-weight: 500;
       }
     }
   }
