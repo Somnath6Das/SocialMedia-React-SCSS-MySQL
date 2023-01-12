@@ -5,8 +5,7 @@
   height: calc(200vh - 70vh);
   overflow: scroll;
   &::-webkit-scrollbar {
-    display: none;
-
+    width: 2px;
   }
   .container {
     .item {
@@ -28,7 +27,7 @@
             border-radius: 50%;
             object-fit: cover;
           }
-          span{
+          span {
             font-weight: 500;
             color: black;
             font-size: medium;
@@ -39,7 +38,7 @@
           align-items: center;
           gap: 10px;
 
-          button{
+          button {
             border: none;
             padding: 5px;
             color: white;
@@ -47,11 +46,11 @@
             border-radius: 6px;
 
             &:first-child {
-                background-color: rgb(10, 165, 10);
-                padding: 5px 10px;
+              background-color: rgb(10, 165, 10);
+              padding: 5px 10px;
             }
             &:last-child {
-                background-color: rgb(212, 59, 59);
+              background-color: rgb(212, 59, 59);
             }
           }
         }

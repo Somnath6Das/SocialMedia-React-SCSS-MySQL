@@ -5,10 +5,9 @@
   height: calc(200vh - 70vh);
   overflow: scroll;
   &::-webkit-scrollbar {
-    display: none;
+    width: 2px;
   }
- 
- 
+  
   .container {
     padding: 20px;
     hr {
