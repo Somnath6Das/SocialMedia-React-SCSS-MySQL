@@ -1,36 +1,72 @@
+@import "../../style.scss";
+
+
+
+
 .rightBar {
+  @include themify($themes) {
   flex: 3;
   position: sticky;
-  top: 70px;
-  height: calc(210vh - 70vh);
+  top: 50px;
+  height: calc(210vh - 50vh);
   overflow: scroll;
+  background-color: themed("bgSoft");
+  
   &::-webkit-scrollbar {
-    width: 2px;
+    display: none;
   }
   .container {
+    padding: 10px;
+
     .item {
+      padding: 10px;
+      -webkit-box-shadow: 0px 0px 14px -3px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 0px 0px 14px -3px rgba(0, 0, 0, 0.75);
+      box-shadow: 0px 0px 14px -3px rgba(0, 0, 0, 0.75);
+      margin-bottom: 20px;
+      background-color: themed("bg");
       span {
-        color: gray;
+        color: themed("textColor");
       }
       .user {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        font-size: 13px;
         margin: 20px 0px;
         .userInfo {
           display: flex;
           align-items: center;
-          gap: 20px;
+          gap: 10px;
+          position: relative;
           img {
             width: 40px;
             height: 40px;
             border-radius: 50%;
             object-fit: cover;
           }
+          p{
+           
+            color: themed("softTextColor");
+            font-size: 14px;
+            
+          }
           span {
+         
+          
             font-weight: 500;
-            color: black;
+            color: themed("textColor");;
             font-size: medium;
+            margin-right: 3px;
+          }
+          .online{
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: limegreen;
+            position: absolute;
+            top: 0;
+            left:30px;
           }
         }
         .buttons {
@@ -57,4 +93,5 @@
       }
     }
   }
+}
 }

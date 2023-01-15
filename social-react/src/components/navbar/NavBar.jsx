@@ -15,18 +15,18 @@ const NavBar = () => {
         <Link to="/" style={{ textDecoration: "none" }}>
           <span>Social World</span>
         </Link>
-        <HomeOutlinedIcon />
-        <DarkModeOutlinedIcon />
-        <GridViewOutlinedIcon />
+        <HomeOutlinedIcon className="icon"/>
+        <DarkModeOutlinedIcon className="icon"/>
+        <GridViewOutlinedIcon className="icon"/>
         <div className="search">
-          <SearchOutlinedIcon />
+          <SearchOutlinedIcon className="icon"/>
           <input type="text" placeholder="Search" />
         </div>
       </div>
       <div className="right">
-        <PersonOutlineOutlinedIcon />
-        <EmailOutlinedIcon />
-        <NotificationsNoneOutlinedIcon />
+        <PersonOutlineOutlinedIcon className="icon"/>
+        <EmailOutlinedIcon className="icon"/>
+        <NotificationsNoneOutlinedIcon className="icon"/>
         <div className="user">
           <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png" alt="" />
           <span>Somnath</span>

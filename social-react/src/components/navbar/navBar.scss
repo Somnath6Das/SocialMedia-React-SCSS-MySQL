@@ -1,53 +1,70 @@
+@import "../../style.scss";
+
 .navbar {
-  display: flex;
-  justify-content: space-between;
-  padding: 10px 20px;
-  height: 50px;
-  border-bottom: 1px solid lightskyblue;
-  position: sticky;
-  background-color: white;
-  z-index: 2;
-  top: 0;
-  .left {
+  @include themify($themes) {
     display: flex;
-    align-items: center;
-    gap: 30px;
-    span {
-      font-weight: bold;
-      font-size: 20px;
-      color: rgb(9, 134, 175);
-    }
-    .search {
+    justify-content: space-between;
+    padding: 10px 20px;
+    height: 30px;
+    border-bottom: 1px solid themed("border");
+    position: sticky;
+    background-color: themed("bg");
+    
+    z-index: 2;
+    top: 0;
+    .left {
       display: flex;
       align-items: center;
-      gap: 10px;
-      border: 1px solid lightblue;
-      border-radius: 7px;
-      padding: 5px;
-      input {
-        border: none;
-        width: 500px;
-      }
-    }
-  }
-  .right {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-
-    .user {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-
-      img {
-        width: 30px;
-        height: 30px;
-        border-radius: 50%;
-        object-fit: cover;
+      gap: 30px;
+      .icon {
+        color: themed("textColor");
       }
       span {
-        font-weight: 500;
+        font-weight: bold;
+        font-size: 20px;
+        color: themed("textColor");
+      }
+      .search {
+        .icon {
+          color: themed("textColor");
+        }
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        border: 1px solid themed("bgSoft");
+        border-radius: 7px;
+        padding: 5px;
+        input {
+          border: none;
+          width: 500px;
+          background-color: transparent;
+          color: themed("textColor");
+        }
+      }
+    }
+    .right {
+      .icon {
+        color: themed("textColor");
+      }
+      display: flex;
+      align-items: center;
+      gap: 20px;
+
+      .user {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        img {
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          object-fit: cover;
+        }
+        span {
+          font-weight: 500;
+          color: themed("textColor");
+        }
       }
     }
   }
