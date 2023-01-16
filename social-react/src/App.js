@@ -6,21 +6,26 @@ import Register from "./pages/register/Register";
 import Home from "./pages/home/Home";
 import Profile from "./pages/profile/Profile";
 import "./style.scss";
-
 import {
   createBrowserRouter,
   Navigate,
   Outlet,
   RouterProvider,
 } from "react-router-dom";
+import { useContext } from "react";
+import { DarkModeContext } from "./context/darkModeContext";
+
 
 function App() {
 
   const currentUser = true;
 
+  const {darkMode}   = useContext(DarkModeContext);
+  console.log(darkMode);
+
   const Layout = () => {
     return (
-      <div className="theme-dark">
+      <div className={`theme-${darkMode? "dark":"light"}`}>
         <NavBar />
         <div style={{ display: "flex" }}>
           <LeftBar />
@@ -44,7 +49,7 @@ function App() {
       path: "/",
       element: <ProtectedRoute><Layout /></ProtectedRoute>,
       children: [
-        // in this children all the Layout components will remain common only home and profile will be include as per link condition. 
+        // in this children all the Layout() components will remain common only <Home/> and <profile/> will be include as per link condition. 
         {
           path: "/",
           element: <Home />
