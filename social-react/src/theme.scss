@@ -1,4 +1,7 @@
 // this scss file should be import in scss files whenever need to change the theme.
+// to make theme on a page.
+//  i. theme.css, ii. import and implements dark mode in navBar.scss, home.scss, rightBar.scss, leftBar.scss, iii. darkModeContext.js, iv. wrap <App /> with context <DarkModeContextProvider /> in index.js, v. toggle the theme with icon button in NavBar.jsx
+
 
 $themes: (
   light: (
