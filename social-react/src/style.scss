@@ -1,5 +1,8 @@
+// this scss file should be import in scss files whenever need to change the theme.
+
 $themes: (
   light: (
+    //these key will be the parameter value when the function themed() called in scss file.
     textColor: #000,
     softTextColor: rgb(221, 217, 217),
     bg: white,
@@ -37,6 +40,8 @@ $themes: (
     }
   }
 }
+// this themed() function will call when need to chance the theme color from light mode to dark mode.
+//example -    color: themed(textColor);
 @function themed($key) {
   @return map-get($theme-map, $key);
 }
