@@ -14,14 +14,15 @@ import {
 } from "react-router-dom";
 import { useContext } from "react";
 import { DarkModeContext } from "./context/darkModeContext";
+import { AuthContext } from "./context/authContext";
 
 
 function App() {
 
-  const currentUser = true;
+  const {currentUser} = useContext(AuthContext);
 
   const {darkMode}   = useContext(DarkModeContext);
-  console.log(darkMode);
+  // console.log(darkMode);
 
   const Layout = () => {
     return (
