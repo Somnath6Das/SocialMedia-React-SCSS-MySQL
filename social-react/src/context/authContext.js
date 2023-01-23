@@ -12,7 +12,7 @@ export const AuthContextProvider = ({ children }) => {
    setCurrentUser({
     id: 1,
     name: "Somnath Das",
-    profilePic: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png",
+    profilePic: "https://images.pexels.com/photos/1366630/pexels-photo-1366630.jpeg?auto=compress&cs=tinysrgb&w=600",
    });
     };
 
