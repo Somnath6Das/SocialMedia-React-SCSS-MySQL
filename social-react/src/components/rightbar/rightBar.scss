@@ -11,7 +11,7 @@
   height: calc(210vh - 50vh);
   overflow: scroll;
   background-color: themed("bgSoft");
-  
+ 
   &::-webkit-scrollbar {
     display: none;
   }
@@ -24,7 +24,8 @@
       -moz-box-shadow: 0px 0px 14px -3px rgba(0, 0, 0, 0.75);
       box-shadow: 0px 0px 14px -3px rgba(0, 0, 0, 0.75);
       margin-bottom: 20px;
-      background-color: themed("bg");
+      background-color: themed("bg"); 
+      border-radius: 10px;
       span {
         color: themed("textColor");
       }

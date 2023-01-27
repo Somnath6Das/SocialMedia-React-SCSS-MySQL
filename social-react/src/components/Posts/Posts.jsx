@@ -1,3 +1,4 @@
+import Post from "../../Post/Post";
 import "./Posts.scss";
 
 const Posts = () => {
@@ -13,16 +14,23 @@ const Posts = () => {
     },
     {
       id: 2,
-      name: "somnath",
-      userId: 1,
+      name: "Das",
+      userId: 2,
       profilePic:
         "https://images.pexels.com/photos/1647962/pexels-photo-1647962.jpeg?auto=compress&cs=tinysrgb&w=600",
       desc: "description of a post share by someone",
+      img: "https://images.pexels.com/photos/2850287/pexels-photo-2850287.jpeg?auto=compress&cs=tinysrgb&w=600",
     },
   ];
-  return <div className="Posts">{posts.map(post=>(
-    <div className="post">{}</div>
-  ))}</div>;
+  return (
+    <div className="posts">
+      {posts.map((post) => (
+        <div className="post">
+          <Post post={post} key={post.id}/>
+        </div>
+      ))}
+    </div>
+  );
 };
 
 export default Posts;
