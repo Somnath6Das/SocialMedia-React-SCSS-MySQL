@@ -12,7 +12,7 @@ const RightBar = () => {
                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwPZRlDLLRvB5Qnb1gjwLZmzdopBRgIZ2yPw&usqp=CAU"
                 alt=""
               />
-              <span>Jiya Indore</span>
+              <span>Jiya</span>
             </div>
             <div className="buttons">
               <button>follow</button>
@@ -25,7 +25,7 @@ const RightBar = () => {
                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwPZRlDLLRvB5Qnb1gjwLZmzdopBRgIZ2yPw&usqp=CAU"
                 alt=""
               />
-              <span>Jiya Indore</span>
+              <span>Jiya</span>
             </div>
             <div className="buttons">
               <button>follow</button>
