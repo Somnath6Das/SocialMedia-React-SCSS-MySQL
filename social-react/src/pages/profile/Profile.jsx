@@ -8,6 +8,8 @@ import PlaceOutlinedIcon from "@mui/icons-material/PlaceOutlined";
 import TranslateOutlinedIcon from "@mui/icons-material/TranslateOutlined";
 import AlternateEmailOutlinedIcon from '@mui/icons-material/AlternateEmailOutlined';
 import MoreVertOutlinedIcon from '@mui/icons-material/MoreVertOutlined';
+import Posts from "../../components/Posts/Posts";
+
 
 const Profile = () => {
   return (
@@ -28,7 +30,7 @@ const Profile = () => {
         <div className="userInfo">
           <div className="left">
             <a href="http://facebook.com">
-              <FacebookIcon fontSize="large" />
+              <FacebookIcon fontSize="large"/>
             </a>
             <a href="http://twitter.com">
               <TwitterIcon fontSize="large" />
@@ -47,15 +49,15 @@ const Profile = () => {
             <span>Little Park</span>
             <div className="info">
               <div className="item">
-                <PlaceOutlinedIcon />
+                <PlaceOutlinedIcon fontSize="14"/>
                 <span>India</span>
               </div>
               <div className="item">
-                <TranslateOutlinedIcon/>
+                <TranslateOutlinedIcon fontSize="14"/>
                 <span>Ben</span>
               </div>
-              <button>follow</button>
             </div>
+              <button>follow</button>
           </div>
           <div className="right">
             <AlternateEmailOutlinedIcon/>
@@ -63,6 +65,7 @@ const Profile = () => {
           </div>
         </div>
       </div>
+      <Posts/>
     </div>
   );
 };
