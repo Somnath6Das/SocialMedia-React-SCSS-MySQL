@@ -6,10 +6,9 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import PinterestIcon from "@mui/icons-material/Pinterest";
 import PlaceOutlinedIcon from "@mui/icons-material/PlaceOutlined";
 import TranslateOutlinedIcon from "@mui/icons-material/TranslateOutlined";
-import AlternateEmailOutlinedIcon from '@mui/icons-material/AlternateEmailOutlined';
-import MoreVertOutlinedIcon from '@mui/icons-material/MoreVertOutlined';
+import AlternateEmailOutlinedIcon from "@mui/icons-material/AlternateEmailOutlined";
+import MoreVertOutlinedIcon from "@mui/icons-material/MoreVertOutlined";
 import Posts from "../../components/Posts/Posts";
-
 
 const Profile = () => {
   return (
@@ -30,7 +29,7 @@ const Profile = () => {
         <div className="userInfo">
           <div className="left">
             <a href="http://facebook.com">
-              <FacebookIcon fontSize="large"/>
+              <FacebookIcon fontSize="large" />
             </a>
             <a href="http://twitter.com">
               <TwitterIcon fontSize="large" />
@@ -49,23 +48,26 @@ const Profile = () => {
             <span>Little Park</span>
             <div className="info">
               <div className="item">
-                <PlaceOutlinedIcon fontSize="14"/>
+                <PlaceOutlinedIcon fontSize="14" />
                 <span>India</span>
               </div>
               <div className="item">
-                <TranslateOutlinedIcon fontSize="14"/>
+                <TranslateOutlinedIcon fontSize="14" />
                 <span>Ben</span>
               </div>
             </div>
-              <button>follow</button>
+            <button>follow</button>
           </div>
           <div className="right">
-            <AlternateEmailOutlinedIcon/>
-            <MoreVertOutlinedIcon/>
+            <AlternateEmailOutlinedIcon />
+            <MoreVertOutlinedIcon />
           </div>
         </div>
       </div>
-      <Posts/>
+      <div className="postContainer">
+      {/* need to solve props error in Posts */}
+        <Posts />
+      </div>
     </div>
   );
 };

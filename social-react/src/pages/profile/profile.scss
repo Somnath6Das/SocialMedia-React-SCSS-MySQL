@@ -1,5 +1,5 @@
 @import "../../theme.scss";
-
+@import "../../responsive.scss";
 .profile {
   @include themify($themes) {
     background-color: themed("bgSoft");
@@ -25,6 +25,7 @@
     }
     .profileContainer {
       padding: 20px 30px;
+   
       .userInfo {
         height: 180px;
         -webkit-box-shadow: 0px 0px 14px -3px rgba(0, 0, 0, 0.75);
@@ -37,12 +38,23 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        //responsive
+        @include tablet {
+          padding-top:100px ;
+          flex-direction: column;
+          height: 30vh;
+        }
+        
         .left {
           flex: 1;
           display: flex;
           align-items: center;
           justify-content: flex-start;
           gap: 10px;
+          //responsive
+          @include mobile {
+            flex-wrap: wrap;
+          }
           a {
             color: grey;
           }
@@ -89,6 +101,8 @@
           gap: 10px;
         }
       }
+    }.postContainer{
+      padding: 10px 24px;
     }
   }
 }

@@ -1,8 +1,12 @@
 @import "../../theme.scss";
-
+@import "./../../responsive.scss";
 .home {
   @include themify($themes) {
     background-color: themed("bgSoft");
-    padding: 20px 70px;
+    padding: 20px 40px;
+     // responsive
+     @include tablet{
+      padding: 10px;
+    }
   }
 }

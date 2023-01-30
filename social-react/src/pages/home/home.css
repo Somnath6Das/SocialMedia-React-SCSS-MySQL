@@ -1,1 +1,1 @@
-.theme-light .home{background-color:#f6f3f3;padding:20px 70px}.theme-dark .home{background-color:#424141;padding:20px 70px}
+.theme-light .home{background-color:#f6f3f3;padding:20px 40px}@media(max-width: 933px){.theme-light .home{padding:10px}}.theme-dark .home{background-color:#424141;padding:20px 40px}@media(max-width: 933px){.theme-dark .home{padding:10px}}

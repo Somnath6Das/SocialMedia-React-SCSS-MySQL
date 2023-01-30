@@ -1,0 +1,14 @@
+// from 0 to 933px mobile function will call.
+//import this file to call this function.
+// call this function to i. navbar.scss, leftbar.scss, rightbar.scss, home.scss, stories.scss, profile.scss
+
+@mixin tablet{
+  @media (max-width: 933px) {
+    @content;
+  }
+}
+@mixin mobile{
+  @media (max-width: 400px){
+    @content;
+  }
+}

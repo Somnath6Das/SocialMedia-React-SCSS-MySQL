@@ -1,5 +1,5 @@
 @import "../../theme.scss";
-
+@import "../../responsive.scss";
 
 .leftBar { 
   @include themify($themes) {
@@ -10,6 +10,10 @@
   overflow: scroll;
   background-color: themed("bg");
   
+   // responsive
+   @include tablet{
+    display: none;
+  }
   &::-webkit-scrollbar {
   display: none;
   }
